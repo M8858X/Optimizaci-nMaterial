@@ -4,7 +4,7 @@ import java.lang.Math;
 public class PrimerReto{
 	
 	
-	public double[] NewtonRaphson(double volume){		//Escenario 1
+	public  static double[] NewtonRaphson(double volume){		//Escenario 1
 		double yi = (double)Math.round(Math.pow(volume, 1/3)*1000d)/1000d; //Asuming the box is a cube so V = xyz equals V = y^3 so ... y = v^(1/3)
 		
 		double function =  0;		// f(x)
@@ -39,7 +39,7 @@ public class PrimerReto{
 		
 	}
 	
-	public double quadraticFormula(double a, double b){	
+	public static double quadraticFormula(double a, double b){	
 		double primeA = 12.0; 		// 4 squares removed = 4x^3 , derivative equals 12x^2 . Fixed amount in this case.
 		double primeB = (double)Math.round(4*(-a-b)*1000d)/1000d;
 		double primeC = (double)Math.round((a*b)*1000d)/1000d;
@@ -69,7 +69,7 @@ public class PrimerReto{
 
 	}
 	
-	public double NewtonRaphson(double lado, double radio){ //Escenario 3
+	public static double NewtonRaphson(double lado, double radio){ //Escenario 3
 		//(double)Math.round(()*1000d)/1000d;  rounds up to 3 decimals
 		double diametro = (double)Math.round((2 * radio)*1000d)/1000d; 
 		double xi = (double)Math.round((lado / 2)*1000d)/1000d;	// X0, first value of x assuming the best case would be drilling up to the half of the cube
